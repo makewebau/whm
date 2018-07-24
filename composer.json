@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\MakeWeb\\WHM\\": "src/"
+            "MakeWeb\\WHM\\": "src/"
         }
     },
     "license": "MIT",

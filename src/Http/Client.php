@@ -40,6 +40,9 @@ abstract class Client
         );
 
         if ($response->isError()) {
+            if ($response->hasExceptionClass()) {
+                $response->throwException();
+            }
             throw new \Exception('Request failed with message: '.$response->buildErrorMessage());
         }
 
